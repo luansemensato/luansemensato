@@ -86,7 +86,7 @@
 
     .contact{
       padding: 15px;
-      margin: 50px 0 50px 0;
+      margin: 50px 0 10px 0;
       color: #f5f6f9;
       background-color: #23b1e6;
     }
@@ -119,6 +119,19 @@
       font-weight: 300;
       color: #999999;
     }
+
+    .pdf{
+      margin-bottom: 50px;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 300;
+      border-bottom: 1px dotted blue;
+      color: #23b1e6;
+    }
+
+    .pdf:hover{
+      border-bottom: 1px solid blue;
+    }
   </style>
 </head>
 
@@ -134,6 +147,8 @@
     <div class="contact">
       <span class="info">contato<span>[at]</span>luansemensato<span>[dot]</span>com<span>[dot]</span>br</span>
     </div>
+
+    <a href="/curriculo.pdf" class="pdf" target="_blank">Currículo</a>
   </article>
 
   <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -146,6 +161,16 @@
 
     ga('create', 'UA-21378352-3', 'auto');
     ga('send', 'pageview');
+  </script>
+
+  <script data-react-helmet="true" type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "type": "WebPage",
+      "name": "Luan Semensato - Front-end Developer em Curitiba",
+      "description": "Front-end Developer em Curitiba-PR. Desenvolvimento de sites, blogs, landing pages, etc. Entre em contato!",
+      "url": "https://luansemensato.com.br"
+    }
   </script>
 </body>
 </html>
