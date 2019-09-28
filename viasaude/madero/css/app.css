@@ -2,8 +2,8 @@
  * Via Saúde - Gestão Integral
  */
 body {
-  padding-top: 56px;
   font-family: 'Lato', sans-serif;
+  padding-top: 56px;
 }
 
 .bg-dark {
@@ -22,20 +22,19 @@ body {
 .bg-secondary {
   background: url(../images/bg.jpg) no-repeat center center;
   background-size: cover;
-  height: 450px;
+  height: 400px;
 }
 
 .bg-subpage {
-  background: url(../images/bg-2.jpg) no-repeat center top;
-
+  background: url(../images/bg-4.jpg) no-repeat center center;
   background-size: cover;
   color: #fff;
-  min-height: 230px;
+  min-height: 250px;
 }
 
 .bg-subpage .jumbotron-heading,
 .bg-subpage .lead {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
 }
 
 .navbar-brand img {
@@ -54,9 +53,8 @@ img {
   max-width: 100%;
 }
 
-p,
-li {
-  font-weight: lighter;
+p {
+  font-size: 1.1rem;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
