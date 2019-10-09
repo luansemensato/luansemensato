@@ -3,13 +3,16 @@
  */
 
 body {
-  padding-top: 70px;
+  padding-top: 78px;
   font-family: 'Maven Pro', sans-serif;
   font-weight: 400;
 }
 
 img { max-width: 100%; }
-p, li { font-weight: 300; }
+
+p, small, ul li, ol li {
+  color: #585858;
+}
 
 a {
   color: #04215f;
@@ -132,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-subpage.bg-1 {
-  background: url(../images/bg-2.png) no-repeat center center;
+  background: url(../images/bg-2.jpg) no-repeat center center;
   background-size: cover;
 }
 
