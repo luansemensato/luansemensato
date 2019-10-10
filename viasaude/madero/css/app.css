@@ -17,6 +17,8 @@ body {
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255,255,255,.7);
   font-weight: lighter;
+  padding-right: .8rem;
+  padding-left: .8rem;
 }
 
 .bg-secondary {

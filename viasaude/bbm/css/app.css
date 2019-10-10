@@ -32,7 +32,6 @@ strong, b {
 h1, h2, h3, h4, h5, h6 {
   color: #04215f;
   font-weight: 700;
-  letter-spacing: -0.5px;
 }
 
 .text-info,
@@ -90,8 +89,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .nav-link{
   color: white !important;
-  font-size: 0.875rem;
+  font-size: .95rem;
   font-weight: 500;
+  padding-left: .8rem !important;
+  padding-right: .8rem !important;
 }
 
 .navbar .active .nav-link,
@@ -100,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .nav-item--logo .nav-link {
-  padding: 0;
+  padding: .4rem 1rem;
 }
 
 /* 
@@ -110,7 +111,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #04215f;
   font-weight: bold;
   text-align: center;
-  letter-spacing: -1px;
 }
 
 .main-title::after {
@@ -135,12 +135,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-subpage.bg-1 {
-  background: url(../images/bg-2.jpg) no-repeat center center;
+  background: url(../images/bg-1.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .bg-subpage.bg-2 {
-  background: url(../images/banner.jpg) no-repeat center center;
+  background: url(../images/bg-2.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -181,6 +181,11 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.plans .plan:hover .plan__title {
+  background-color: #2A354C;
+  color: #fff;
+}
+
 .plans .plan:hover .plan__icon img {
   width: 80px;
 }
@@ -191,6 +196,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #2A354C;
   display: block;
   margin: 0 auto;
+  transition: all 0.2s;
 }
 
 .plans .plan__icon img {
@@ -199,13 +205,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .plans .plan__title{
-  background-color: #2A354C;
-  color: #fff;
+  background-color: #ececec;
+  border-radius: 6px;
+  color: #2A354C;
   font-size: 16px;
+  transition: all 0.2s;
 }
 
 .plans .plan__text{
-  font-size: 14px;
   color: #444;
 }
 
@@ -235,7 +242,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .blog-item__text {
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .blog-item__date,
