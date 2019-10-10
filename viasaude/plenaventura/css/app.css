@@ -97,7 +97,7 @@ strong, b {
   border-bottom: 2px solid #fab500;
   display: block;
   width: 150px;
-  margin: auto;
+  margin: 10px auto 0;
 }
 
 .navbar-brand img {
@@ -138,19 +138,12 @@ strong, b {
 .plans .plan__text{
   font-size: 14px;
   font-weight: 300;
-  min-height: 130px;
   color: #444;
 }
 
 /* 
  BLOG
 */
-.blog {
-  padding: 50px;
-  background: url(../images/bg-section.jpg) no-repeat center center;
-  background-size: cover;
-}
-
 .blog-item {
   background: #fff;
   border: 1px solid #e3e3e3;
