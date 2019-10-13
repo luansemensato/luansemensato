@@ -1,0 +1,237 @@
+/*!
+ * Via Saúde - Gestão Integral
+ */
+
+body {
+  padding-top: 78px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+img { max-width: 100%; }
+
+p, small, ul li, ol li {
+  color: #585858;
+}
+
+a {
+  color: #0c5443;
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: #0c5443;
+  text-decoration: underline;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+  color: #0c5443;
+  font-weight: 700;
+}
+
+.btn-success,
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #0c5443;
+  border-color: #0c5443;
+}
+
+.btn-outline-success {
+  color: #0c5443;
+  border-color: #0c5443;
+}
+
+.text-success {
+  color: #0c5443 !important;
+}
+
+.btn-danger,
+.btn-outline-danger:hover {
+  color: #fff;
+  background-color: #c62626;
+  border-color: #c62626;
+}
+
+.btn-outline-danger {
+  color: #c62626;
+  border-color: #c62626;
+}
+
+.text-danger {
+  color: #c62626 !important;
+}
+
+
+/* 
+ ACCORDION
+*/
+.accordion .card-header {
+  padding: 0;
+}
+
+.accordion .card-header .btn-link {
+  color: #666;
+}
+
+.accordion .card-header .btn-link:hover,
+.accordion .card-header .btn-link:focus {
+  text-decoration: none;
+}
+
+.accordion .card-body a{
+  color: #0c5443;
+}
+
+/* 
+ NAVBAR
+*/
+.navbar.nav-custom {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link{
+  color: #0c5443 !important;
+  font-size: .95rem;
+  font-weight: 500;
+  padding-left: .8rem !important;
+  padding-right: .8rem !important;
+}
+
+.navbar .active .nav-link,
+.navbar .nav-link:hover{
+  color:#c62626 !important;
+}
+
+.navbar .nav-item--logo .nav-link {
+  padding: .4rem 1rem;
+}
+
+/* 
+ MAIN TITLE
+*/
+.main-title {
+  color: #0c5443;
+  font-weight: bold;
+  text-align: center;
+}
+
+.navbar-brand img {
+  width: 150px;
+}
+
+.bg-subpage {
+  color: #fff;
+  min-height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bg-subpage.bg-1 {
+  background: url(../images/bg-1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.bg-subpage.bg-2 {
+  background: url(../images/bg-2.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.bg-subpage:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background: rgba(34, 42, 60, 0.4);
+  top: 0;
+  left: 0;
+}
+
+.bg-subpage .main-title {
+  color: #fff;
+  position: relative;
+  z-index: 20;
+}
+
+/* 
+ PLANS
+*/
+.plans .plan:hover {
+  text-decoration: none;
+}
+
+.plans .plan:hover .plan__title {
+  background-color: #0c5443;
+  color: #fff;
+}
+
+.plans .plan:hover .plan__icon img {
+  width: 80px;
+}
+
+.plans .plan__icon {
+  height: 120px;
+  width: 120px;
+  background-color: #0c5443;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.2s;
+}
+
+.plans .plan__icon img {
+  width: 70px;
+  transition: all 0.2s;
+}
+
+.plans .plan__title{
+  background-color: #ececec;
+  border-radius: 6px;
+  color: #0c5443;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.plans .plan__text{
+  color: #444;
+}
+
+/* 
+ BLOG
+*/
+.blog-item {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  display: block;
+  padding: 10px;
+}
+
+.blog-item:hover {
+  text-decoration: none;
+}
+
+.blog-item__image {
+  display: block;
+  margin: 5px auto;
+}
+
+.blog-item__title {
+  color: #c62626;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.blog-item__text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.blog-item__date,
+.blog-item__link {
+  font-size: 14px;
+}
+
