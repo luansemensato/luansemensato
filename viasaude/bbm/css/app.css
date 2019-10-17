@@ -60,23 +60,18 @@ h1, h2, h3, h4, h5, h6 {
 } */
 
 /* 
- ACCORDION
+ NAV
 */
-.accordion .card-header {
-  padding: 0;
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #002E5E;
 }
 
-.accordion .card-header .btn-link {
-  color: #666;
-}
-
-.accordion .card-header .btn-link:hover,
-.accordion .card-header .btn-link:focus {
-  text-decoration: none;
-}
-
-.accordion .card-body a{
-  color: #222a3c;
+.nav-pills .nav-link {
+  background-color: #eaeaea;
+  margin: 5px;
 }
 
 /* 
