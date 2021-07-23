@@ -26,7 +26,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
 
   <meta name="msapplication-TileColor" content="#252525">
   <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
@@ -36,13 +36,13 @@
   <meta property="og:title" content="Luan Semensato - Front-End Developer">
   <meta property="og:description" content="Front-End Developer. Desenvolvimento de sites, blogs, landing pages, etc. Entre em contato!">
   <meta property="og:url" content="https://luansemensato.com.br">
-  <meta property="og:image" content="https://luansemensato.com.br/images/avatar.jpg">
+  <meta property="og:image" content="https://luansemensato.com.br/images/cover.png">
   <meta property="og:locale" content="pt_BR">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Luan Semensato - Front-End Developer">
   <meta name="twitter:description" content="Front-End Developer. Desenvolvimento de sites, blogs, landing pages, etc. Entre em contato!">
-  <meta name="twitter:image" content="https://luansemensato.com.br/images/avatar.jpg">
+  <meta name="twitter:image" content="https://luansemensato.com.br/images/cover.png">
 
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -67,12 +67,11 @@
     }
 
     body {
-      padding: 80px 0;
       text-align: center;
       color: #f0f0f0;
       background-color: #252525;
       font-family: 'Montserrat';
-      font-weight: 200;
+      font-weight: 400;
       text-rendering: optimizeLegibility;
       display: flex;
       align-items: center;
@@ -90,33 +89,32 @@
 
     .function {
       text-transform: uppercase;
-      font-weight: 300;
+      font-weight: 200;
       font-size: 21px;
       color: #f0f0f0;
       padding: 15px;
-      background-color: #383838;
+      background-color: #292929;
     }
 
-    .contact { margin: 50px 0 5px 0; }
-
-    .contact .info {
+    .contact {
       width: 100%;
+      margin: 50px 0 5px 0;
+      padding: 0 15px;
       display: block;
       font-size: 12px;
       color: #f0f0f0;
     }
 
-    .contact .info > span { margin: 0 2px; }
+    .contact > span { margin: 0 2px; }
 
-    .pdf {
-      font-size: 9px;
-      font-style: normal;
-      font-weight: 300;
+    .links a {
+      font-size: 10px;
       color: #f0f0f0;
       text-transform: uppercase;
+      margin: 0 10px;
     }
 
-    .pdf:hover { border-bottom: 1px dotted #f0f0f0; }
+    .links a:hover { border-bottom: 1px dotted #f0f0f0; }
 
     @media (max-width: 450px) {
       .name { font-size: 32px; }
@@ -128,17 +126,33 @@
 <body>
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMP59Q9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <article class="content" itemscope itemtype="http://schema.org/Person">
-    <h1 class="name" itemprop="name">Luan Semensato</h1>
-    <h2 class="function" itemprop="jobTitle">Front-End Developer</h2>
+  <article class="content">
+    <h1 class="name">Luan Semensato</h1>
+    <h2 class="function">Front-End Developer</h2>
 
-    <div class="contact">
-      <span class="info">contato<span>[at]</span>luansemensato<span>[dot]</span>com<span>[dot]</span>br</span>
+    <div class="contact">contato<span>[at]</span>luansemensato<span>[dot]</span>com<span>[dot]</span>br</div>
+
+    <div class="links">
+      <a href="https://www.linkedin.com/in/luansemensato/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/luansemensato" target="_blank">GitHub</a>
+      <a href="./curriculo.pdf" target="_blank">Currículo</a>
     </div>
-
-    <a href="./curriculo.pdf" class="pdf" target="_blank">Currículo</a>
   </article>
 
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Luan Semensato",
+      "jobTitle": "Front-End Developer",
+      "url": "https://luansemensato.com.br",
+      "image": "https://luansemensato.com.br/images/cover.png",
+      "sameAs": [
+        "https://www.linkedin.com/in/luansemensato/",
+        "https://github.com/luansemensato"
+      ]
+    }
+  </script>
   <script data-react-helmet="true" type="application/ld+json">
     {
       "@context": "http://schema.org",
