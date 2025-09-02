@@ -91,12 +91,12 @@
       rel="stylesheet"
     />
 
-    <meta name="msapplication-TileColor" content="#252525" />
+    <meta name="msapplication-TileColor" content="#212121" />
     <meta
       name="msapplication-TileImage"
       content="./images/favicon/ms-icon-144x144.png"
     />
-    <meta name="theme-color" content="#252525" />
+    <meta name="theme-color" content="#212121" />
 
     <meta property="og:type" content="website" />
     <meta
@@ -168,8 +168,8 @@
 
       body {
         text-align: center;
-        color: #fefefa;
-        background-color: #161818;
+        color: #212121;
+        background-color: #f1edea;
         font-family: "Raleway";
         font-weight: 500;
         text-rendering: optimizeLegibility;
@@ -182,43 +182,68 @@
 
       .content {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
       }
 
       .name {
-        font-size: 46px;
-        font-weight: 800;
-        line-height: 40px;
-        letter-spacing: -1px;
-        padding: 0 15px;
-        margin-bottom: 20px;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+        padding: 0 24px;
+        text-transform: uppercase;
+        text-align: left;
       }
 
       .function {
-        font-weight: 300;
-        font-size: 22px;
-        color: #fefefa;
-        padding: 15px;
-        margin-bottom: 50px;
-        background-color: #fefefa09;
+        width: 100%;
+        font-weight: 400;
+        font-size: 24px;
+        padding: 24px;
+        text-transform: lowercase;
+        letter-spacing: 1.2px;
+        background-color: #e8f695;
+      }
+
+      .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        padding: 0 24px;
       }
 
       .links a {
-        font-size: 11px;
-        color: #fefefa;
-        text-transform: uppercase;
-        margin: 0 10px;
+        font-size: 12px;
+        color: #212121;
+        text-transform: lowercase;
       }
 
       .links a:hover {
-        border-bottom: 1px solid #fefefa;
+        text-decoration: underline;
       }
 
       @media (max-width: 450px) {
-        .name {
-          font-size: 32px;
+        .content {
+          align-items: flex-start;
         }
+
+        .name {
+          font-size: 42px;
+          line-height: 42px;
+        }
+
         .function {
           font-size: 18px;
+          text-align: left;
+        }
+
+        .links {
+          flex-direction: column;
+          align-items: flex-start;
         }
       }
     </style>
@@ -235,38 +260,42 @@
     ></noscript>
 
     <article class="content">
-      <h1 class="name">Luan Semensato</h1>
+      <h1 class="name">Luan <br />Semensato</h1>
       <h2 class="function">Front-End Developer & AI</h2>
 
       <div class="links">
         <a
-          href="https://blog.luansemensato.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Blog</a
-        >
-        <a
           href="https://www.linkedin.com/in/luansemensato/"
           target="_blank"
           rel="noopener noreferrer"
-          >LinkedIn</a
         >
-        <a
-          href="https://github.com/luansemensato"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub</a
-        >
-        <a href="./curriculo.pdf" target="_blank" rel="noopener noreferrer"
-          >Currículo</a
-        >
+          LinkedIn
+        </a>
+        <a href="./curriculo.pdf" target="_blank" rel="noopener noreferrer">
+          Currículo
+        </a>
         <a
           href="./resume.pdf"
           hreflang="en"
           target="_blank"
           rel="noopener noreferrer"
-          >Resume (EN)</a
         >
+          Resume (EN)
+        </a>
+        <a
+          href="https://blog.luansemensato.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Blog
+        </a>
+        <a
+          href="https://github.com/luansemensato"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
       </div>
     </article>
 
